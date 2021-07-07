@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.5.0)
 
 project(romi-soss-ros2)
 
+find_package(statistics_msgs REQUIRED)
+find_package(libstatistics_collector REQUIRED)
+find_package(rosgraph_msgs REQUIRED)
+
 find_package(soss-rosidl REQUIRED)
 find_package(soss-ros2 REQUIRED)
 find_package(rmf_dispenser_msgs REQUIRED)
